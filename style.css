@@ -174,25 +174,25 @@ main {
   transform: translateY(0);
 }
 
-/*@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 630px) {
   nav {
     display: none;
   }
 
-  .projects .b {
-    display: none;
+  .item {
+    position: relative;
   }
 
-  .project {
-    display: grid;
-    width: 60%;
-    height: 300px;
-    grid-template: repeat(8, 1fr) / repeat(8, 1fr);
-    margin: 0 auto;
-    padding: 0;
+  .controls {
+    display: none
   }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+
 }
-*/
 
 /* Controls ----------------------------------------------------------------------*/
 .controls {
