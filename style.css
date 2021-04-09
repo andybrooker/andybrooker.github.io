@@ -78,21 +78,23 @@ main {
 
 .item {
   position: absolute;
-  display: grid;
-  grid-template: 1fr repeat(8, minmax(0, 1fr)) 1fr/ 1fr repeat(8, minmax(0, 1fr)) 1fr;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 
 }
 
 .item-image-container {
-  position: relative;
-  grid-area: 2 / 3 / 9 / 9;
+  width: 60%;
+  flex-basis: 51%;
 }
 
 .item-image-container::before {
   content: '';
-  grid-area: 3 / 3 / 9 / 9;
   width: 101%;
   height: 101%;
   background: #22222A;
@@ -121,16 +123,18 @@ main {
 }
 
 .item-description {
-  grid-area: 9 / 3 / 10 / 9;
   z-index: 2;
   font-size: calc(1.3vw);
-  padding: 1% 0;
+  padding-top: 1%;
   font-weight: 700;
   overflow: hidden;
+  width: 60%;
+  flex-basis: 51%;
 }
 
 .item-header {
-  grid-area: 5 / 2 / 8 / 6;
+  position: absolute;
+  left: 10%;
   z-index: 100;
   overflow: hidden;
 
@@ -192,10 +196,11 @@ main {
 
 /* Controls ----------------------------------------------------------------------*/
 .controls {
-  position: relative;
+  position: absolute;
   text-align: center;
   z-index: 1000;
-  top: 90%;
+  align-self: center;
+  right: 20vh;
 }
 
 .controls ul {
@@ -203,11 +208,10 @@ main {
 }
 
 .controls ul li {
-  display: inline-block;
   border-radius: 50%;
   width: 5px;
   height: 5px;
-  margin: 3px;
+  margin: 30px;
   background:#bdbdd5;;
   cursor: pointer;
 }
