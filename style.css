@@ -181,6 +181,11 @@ main {
 
   .item {
     position: relative;
+    padding-bottom: 50px;
+  }
+
+  .item-description {
+    display: none;
   }
 
   .controls {
