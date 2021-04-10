@@ -67,10 +67,4 @@ const slider = {
 
 
 let intervalF = setInterval(slider.nextSlide, interval);
-var winWidth = document.documentElement.clientWidth;
-
-//slider.init();
-if (winWidth > 630) {
-  slider.init();
-}
-console.log(winWidth);
+slider.init();
