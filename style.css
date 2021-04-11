@@ -396,6 +396,7 @@ footer {
   list-style: none;
   display: block;
   text-align: center;
+  padding-inline-start: 0;
 }
 
 .menu ul li {
