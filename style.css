@@ -242,8 +242,24 @@ footer {
 /* ABOUT SECTION */
 
 .flex-container {
-  display: flex;
+  display: flex-column;
   justify-content: center;
   align-items: center;
+  margin: 5% 10%;
+  flex-basis: 100%;
+}
+
+.about-me {
+  font-size: 3vh;
+  text-align: center;
+}
+
+.about-me span {
   font-size: 5vh;
+}
+
+.about-me p {
+  font-size: 2.5vh;
+  text-align: justify;
+  text-align-last: center;
 }
