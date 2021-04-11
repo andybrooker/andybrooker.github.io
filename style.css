@@ -263,3 +263,15 @@ footer {
   text-align: justify;
   text-align-last: center;
 }
+
+.flex-container .image-container {
+  max-width: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+}
+
+.flex-container .image-container img {
+  border-radius: 50%;
+  max-width: inherit;
+}
