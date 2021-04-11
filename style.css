@@ -6,8 +6,9 @@ html, body {
 }
 
 .container {
+  position: relative;
   display: grid;
-  grid-template-rows: auto 75vh auto;
+  grid-template-rows: auto 1fr auto;
   min-height: 100%;
 }
 
@@ -19,7 +20,7 @@ header {
 }
 
 .logo img {
-  height: 60px;
+  height: 50px;
 }
 
 nav {
@@ -274,4 +275,69 @@ footer {
 .flex-container .image-container img {
   border-radius: 50%;
   max-width: inherit;
+}
+
+
+
+/* Books I've Read*/
+
+.bookshelf {
+  padding: 1rem 4rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.bookshelf-title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.bookshelf-title p {
+  text-align: justify;
+  text-align-last: center;
+  font-size: 0.75rem;
+}
+
+.books {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 2rem;
+}
+
+.book {
+  max-width: 100%;
+  font-family: Nunito;
+}
+
+.book img {
+  max-width: inherit;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.book img:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.book-info {
+  margin-top: 0.5em;
+}
+
+.book-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.book-subtitle {
+  font-size: 0.75rem;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.book-author {
+  font-weight: 300;
+  font-size: 0.8rem;
 }
