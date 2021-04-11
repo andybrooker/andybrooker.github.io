@@ -38,6 +38,10 @@ header {
   font-weight: 300;
 }
 
+.mobile ul li {
+  padding: 0;
+}
+
 #menu-button {
   cursor: pointer;
 }
@@ -203,6 +207,15 @@ main {
 @media only screen and (max-width: 630px) {
   nav {
     display: none;
+  }
+
+  .logo img {
+    height: 2rem;
+  }
+
+  header {
+    padding: 1rem 0;
+    justify-content: space-around;
   }
 
   .mobile {
