@@ -12,6 +12,16 @@ html, body {
   min-height: 100%;
 }
 
+#nav-menu {
+  display: none;
+  position: fixed;
+  background-color: #EEEEEE;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  opacity: 0.95;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -22,6 +32,21 @@ header {
 .logo img {
   height: 50px;
 }
+
+.mobile {
+  display: none;
+  font-weight: 300;
+}
+
+#menu-button {
+  cursor: pointer;
+}
+
+#menu-button:hover {
+  font-weight: 500;
+}
+
+
 
 nav {
   font-family: Nunito;
@@ -178,6 +203,10 @@ main {
 @media only screen and (max-width: 630px) {
   nav {
     display: none;
+  }
+
+  .mobile {
+    display: flex;
   }
 
   .item {
@@ -340,4 +369,46 @@ footer {
 .book-author {
   font-weight: 300;
   font-size: 0.8rem;
+}
+
+/* Menu */
+.menu {
+  font-family: Nunito;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu ul {
+  list-style: none;
+  display: block;
+  text-align: center;
+}
+
+.menu ul li {
+  padding: 5vh 40px;
+  font-size: 5vh;
+}
+
+.menu a,
+.menu a:link,
+.menu a:visited,
+.menu a:active{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
+
+.menu a:hover {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+#close {
+  position: absolute;
+  top: 5vh;
+  right: 10vh;
+  font-size: 5vh;
+  cursor: pointer;
 }

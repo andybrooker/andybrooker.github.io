@@ -5,18 +5,32 @@
     <link href = 'style.css' rel = 'stylesheet'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script async src = 'menu.js'></script>
   </head>
   <body>
+    <div class = 'menu' id = 'nav-menu'>
+      <div onclick = 'closeMenu()' id = 'close'>x</div>
+    <ul>
+      <li><a href = 'index.html'>home</a></li>
+      <li><a href = '#'>projects</a></li>
+      <li><a href = 'about.html'>about</a></li>
+      <li><a href = 'books.html'>bookshelf</a></li>
+    </ul></div>
     <div class = 'container'>
       <header>
         <div class = 'logo'>
           <a href = 'index.html'><img src = 'images/logo.svg'></a>
         </div>
-        <nav>
+        <nav class = 'desktop'>
           <ul>
             <li><a>projects</a></li>
-            <li><a href = 'about.html' >about</a></li>
-            <li><a href = '#'>bookshelf</a></li>
+            <li><a href = 'about.html'>about</a></li>
+            <li><a href = 'books.html'>bookshelf</a></li>
+          </ul>
+        </nav>
+        <nav class = 'mobile'>
+          <ul>
+            <li><div onclick = 'openMenu()' id = 'menu-button'>menu</div></li>
           </ul>
         </nav>
       </header>
