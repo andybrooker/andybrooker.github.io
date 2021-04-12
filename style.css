@@ -144,9 +144,14 @@ main {
   transition: opacity .3s ease-out .45s;
 }
 
+
+.item.active {
+  z-index: 9999;
+}
 .item.active .item-image {
   opacity: 1;
 }
+
 
 .item.active .item-image-container::before {
   opacity: .8;
@@ -204,9 +209,21 @@ main {
   transform: translateY(0);
 }
 
+.scroll {
+  display: none;
+}
+
 @media only screen and (max-width: 630px) {
   nav {
     display: none;
+  }
+
+  .slideshow {
+    display: none;
+  }
+
+  .scroll {
+    display: block;
   }
 
   .logo img {
@@ -222,12 +239,12 @@ main {
     display: flex;
   }
 
-  .item {
+  .scroll .mobile-item {
     position: relative;
     padding-bottom: 50px;
   }
 
-  .item-description {
+  .scroll .item-description {
     display: none;
   }
 
@@ -329,6 +346,10 @@ footer {
   margin-bottom: 1rem;
 }
 
+.bookshelf span {
+  font-weight: 600;
+}
+
 .bookshelf-title {
   font-size: 1.5rem;
   margin-bottom: 2rem;
@@ -425,4 +446,74 @@ footer {
   right: 10vh;
   font-size: 5vh;
   cursor: pointer;
+}
+
+/* Mobile */
+
+.scroll-items {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+}
+
+.mobile-item-image-container {
+  width: 60%;
+  flex-basis: 51%;
+}
+
+
+.mobile-item-image {
+  position: relative;
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  max-height: 100%;
+  opacity: 1;
+  display: block;
+  /* transition: property name | duration | timing-function | delay  */
+  transition: opacity .3s ease-out .45s;
+}
+
+
+.item-description {
+  z-index: 2;
+  font-size: calc(1.3vw);
+  padding-top: 1%;
+  font-weight: 700;
+  overflow: hidden;
+  width: 60%;
+  flex-basis: 51%;
+}
+
+.mobile-item-header {
+  position: absolute;
+  left: 10%;
+  z-index: 100;
+  /*overflow: hidden;*/
+
+}
+
+.mobile-item-header .vertical-part {
+  margin: 0 px;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  -webkit-font-smoothing: auto;
+  font-size: 10vw;
+}
+
+.scroll .vertical-part {
+  display: inline-block;
+  transform: none;
 }

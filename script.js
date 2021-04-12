@@ -13,6 +13,7 @@ const slider = {
     controls.forEach(control => control.addEventListener('click', e => {slider.clickedControl(e);}));
     controls[current].classList.add('active');
     items[current].classList.add('active');
+
   },
   nextSlide: () => {// Increment current slide and add active class
     slider.reset();
