@@ -9,7 +9,6 @@ html, body {
   position: relative;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  min-height: 100%;
 }
 
 #nav-menu {
@@ -48,6 +47,39 @@ header {
 
 #menu-button:hover {
   font-weight: 500;
+}
+
+.display {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 80vw
+}
+
+.display-container {
+  display: flex;
+  height: 16vw;
+  width: 25vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.display-container h3 {
+  font-size: 3vw;
+  font-weight: 500;
+}
+
+.thumb-one {
+  background-image: url('./images/design-thumb.png');
+  background-size: 100%;
+  background-position: center;
+}
+
+.thumb-one {
+  background-image: url('./images/design-thumb.png');
+  background-size: 100%;
+  background-position: center;
 }
 
 
@@ -258,7 +290,8 @@ main {
 
   footer {
     position: absolute;
-    bottom: 0;
+    left: 0;
+    right: 0;
   }
 
 }
@@ -289,6 +322,14 @@ main {
   background:black;;
 }
 
+.wide-screen-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
 
 footer {
   display: flex;
@@ -310,16 +351,17 @@ footer {
 }
 
 .about-me {
-  font-size: 3vh;
+  font-size: 1rem;
   text-align: center;
+  margin: 0 10% 5% 10%
 }
 
 .about-me span {
-  font-size: 5vh;
+  font-size: 5vw;
 }
 
 .about-me p {
-  font-size: 2.5vh;
+  font-size: 2.5rem;
   text-align: justify;
   text-align-last: center;
 }
