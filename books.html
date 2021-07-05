@@ -3,9 +3,9 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href = 'style.css' rel = 'stylesheet'>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/nfa2cmi.css">    
     <script async src = 'menu.js'></script>
+    <title>Bookshelf</title>
   </head>
   <body>
     <div class = 'menu' id = 'nav-menu'>
@@ -18,19 +18,22 @@
     </ul></div>
     <div class = 'container'>
       <header>
-        <div class = 'logo'>
-          <a href = 'index.html'><img src = 'images/logo.svg'></a>
+        <div class='logo'>
+          <!-- <a href='index.html'><img src='images/logo.svg'></a> -->
+          <a href = 'index.html'><span>Andrew Brooker</span></a>
         </div>
-        <nav class = 'desktop'>
+        <nav class='desktop'>
           <ul>
-            <li><a>projects</a></li>
-            <li><a href = 'about.html'>about</a></li>
-            <li><a href = 'books.html'>bookshelf</a></li>
+            <li><a>Projects</a></li>
+            <li><a href='about.html'>About</a></li>
+            <li><a href='books.html'>Bookshelf</a></li>
           </ul>
         </nav>
-        <nav class = 'mobile'>
+        <nav class='mobile'>
           <ul>
-            <li><div onclick = 'openMenu()' id = 'menu-button'>menu</div></li>
+            <li>
+              <div onclick='openMenu()' id='menu-button'>menu</div>
+            </li>
           </ul>
         </nav>
       </header>
@@ -146,7 +149,7 @@
         </div>
       </main>
       <footer>
-        Andy Brooker 2021
+        Made and Designed by Andy Brooker 2021
       </footer>
     </div>
   </body>

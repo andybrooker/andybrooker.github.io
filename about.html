@@ -3,9 +3,9 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href = 'style.css' rel = 'stylesheet'>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/nfa2cmi.css">    
     <script async src = 'menu.js'></script>
+    <title>About Me</title>
   </head>
   <body>
     <div class = 'menu' id = 'nav-menu'>
@@ -18,32 +18,44 @@
     </ul></div>
     <div class = 'container'>
       <header>
-        <div class = 'logo'>
-          <a href = 'index.html'><img src = 'images/logo.svg'></a>
+        <div class='logo'>
+          <!-- <a href='index.html'><img src='images/logo.svg'></a> -->
+          <a href = 'index.html'><span>Andrew Brooker</span></a>
         </div>
-        <nav class = 'desktop'>
+        <nav class='desktop'>
           <ul>
-            <li><a>projects</a></li>
-            <li><a href = 'about.html'>about</a></li>
-            <li><a href = 'books.html'>bookshelf</a></li>
+            <li><a>Projects</a></li>
+            <li><a href='about.html'>About</a></li>
+            <li><a href='books.html'>Bookshelf</a></li>
           </ul>
         </nav>
-        <nav class = 'mobile'>
+        <nav class='mobile'>
           <ul>
-            <li><div onclick = 'openMenu()' id = 'menu-button'>menu</div></li>
+            <li>
+              <div onclick='openMenu()' id='menu-button'>menu</div>
+            </li>
           </ul>
         </nav>
       </header>
       <main class = 'about'>
         <div class = 'flex-container'>
-        <div class = 'image-container'><img src = 'https://media-exp1.licdn.com/dms/image/C4D03AQFQbMRvyQ-9NQ/profile-displayphoto-shrink_800_800/0/1586780792561?e=1623888000&v=beta&t=mNRNvLpHG_XO7NqqRu0seV-dAbJyCi7A7dXCzMRclVE'></div>
-        <div class = 'about-me'><span>Hey, I'm Andy 👋</span> <br><br> I'm a Bath Engineering graduate and incoming Digital Consultant at Newton Europe.
-        <p>I graduated from the University of Bath with a M.Eng in Mechanical Engineering and Management with a First Class Honours. Outside studies, I enjoyed playing Lacrosse and running the social media for SU Sport.</p>
+        <div class = 'image-container'><img src = './images/about-me.jpeg'></div>
+        <div class = 'about-me'><h1 class = 'name'>I'm Andy.</h1> 
+          Incoming Digital Consultant at Newton Europe, starting in October 2021.
+          <br>
+          <br>
+          I graduated from the University of Bath with First-class Honours in Mechanical Engineering with Manufacturing and Management. 
+          <br>
+          <br>
+          Previously an Operations Manager Intern at <a href = 'https://fatllama.com'>Fat Llama (YC S17)</a> and Tennis Systems Engineer at <a href = 'https://www.hawkeyeinnovations.com/'>Hawk-Eye Innovations</a>.
+          <br>
+          <br>
+          <h2>My CV</h2>
         </div></div>
       </main>
-      <footer>
-        Andy Brooker 2021
-      </footer>
     </div>
+    <footer>
+      Made and Designed by Andy Brooker 2021
+    </footer>
   </body>
 </html>

@@ -5,6 +5,53 @@ html, body {
   margin: 0;
 }
 
+/* Fonts */
+
+h1 {
+  font-weight: 800;
+  font-size: 5vw;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 2vw;
+}
+
+h3 {
+  font-family: halyard-display, sans-serif;
+  font-weight: 400;
+}
+
+.logo {
+  font-family: p22-mackinac-pro, serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.logo a,
+.logo a:link,
+.logo a:visited,
+.logo a:active {
+    text-decoration: none;
+    color: black;
+}
+
+.logo a:hover {
+  color: rgba(0,0,0,0.5)
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-family: halyard-display, serif;
+  display: flex;
+  padding: 0.5rem 4rem;
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
 .container {
   position: relative;
   display: grid;
@@ -76,16 +123,21 @@ header {
   background-position: center;
 }
 
-.thumb-one {
-  background-image: url('./images/design-thumb.png');
+.thumb-two {
+  background-image: url('https://d2908q01vomqb2.cloudfront.net/b6692ea5df920cad691c20319a6fffd7a4a766b8/2017/04/13/osm_9.jpg');
+  background-size: 100%;
+  background-position: center;
+}
+
+.thumb-three {
+  background-image: url('https://www.cloudways.com/blog/wp-content/uploads/Rest-API-introduction.jpg');
   background-size: 100%;
   background-position: center;
 }
 
 
-
 nav {
-  font-family: Nunito;
+  font-family: halyard-display, sans-serif;
 }
 
 nav ul {
@@ -100,27 +152,24 @@ nav ul li {
 nav a,
 nav a:link,
 nav a:visited,
-nav a:active{
+nav a:active {
     text-decoration: none;
     color: black;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 nav a:hover {
     text-decoration: none;
-    color: black;
-    font-weight: 500;
+    color: rgba(0,0,0,0.5);
 }
 
-h1 {
-  font-family: Nunito;
-}
+
 
 
 /* Main */
 
 main {
-  font-family: Lora, serif;
+  font-family: p22-mackinac-pro, serif;
 }
 
 .slideshow {
@@ -288,11 +337,7 @@ main {
     height: auto;
   }
 
-  footer {
-    position: absolute;
-    left: 0;
-    right: 0;
-  }
+  
 
 }
 
@@ -331,13 +376,7 @@ main {
 }
 
 
-footer {
-  display: flex;
-  padding: 0.5rem 4rem;
-  font-family: Nunito;
-  font-weight: 100;
-  font-size: 0.5rem;
-}
+
 
 
 /* ABOUT SECTION */
@@ -354,6 +393,10 @@ footer {
   font-size: 1rem;
   text-align: center;
   margin: 0 10% 5% 10%
+}
+
+.about-me .name {
+  font-size: 2rem;
 }
 
 .about-me span {
@@ -395,12 +438,14 @@ footer {
 .bookshelf-title {
   font-size: 1.5rem;
   margin-bottom: 2rem;
+  font-weight: 800;
   text-align: center;
 }
 
 .bookshelf-title p {
   text-align: justify;
   text-align-last: center;
+  font-weight: 400;
   font-size: 0.75rem;
 }
 
@@ -414,7 +459,7 @@ footer {
 
 .book {
   max-width: 100%;
-  font-family: Nunito;
+  font-family: halyard-display, sans-serif;
 }
 
 .book img {
