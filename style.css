@@ -264,6 +264,13 @@ main {
     display: none;
   }
 
+  .w-i-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .slideshow {
     display: none;
   }
