@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href = 'style.css' rel = 'stylesheet'>
-    <link rel="stylesheet" href="https://use.typekit.net/nfa2cmi.css">    
-    <script async src = 'menu.js'></script>
-    <title>Bookshelf</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Projects • Andy Brooker</title>
+    <meta name = "description" content = "A page trying to keep on top of my reading habit.">
+    <meta name = "author" content = "Andrew Brooker">
+    <meta property="og:title" content = "Bookshelf • Andy Brooker">
+    <meta property="og:type" content = "website">
+    <meta property="og:url" content="https://andrewniallbrooker.com/books">
+    <meta property="og:description" content="A page trying to keep on top of my reading habit.">
+    <link rel="icon" type="image/png" href="./images/icon-g.png" sizes="32x32">
+    <link href='style.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.typekit.net/nfa2cmi.css">
+    <script async src='script.js'></script>
+    
   </head>
-  <body>
+  <body class = 'books-background'>
     <div class = 'menu' id = 'nav-menu'>
       <div onclick = 'closeMenu()' id = 'close'>x</div>
     <ul>
@@ -19,12 +28,21 @@
     <div class = 'container'>
       <header>
         <div class='logo'>
-          <!-- <a href='index.html'><img src='images/logo.svg'></a> -->
-          <a href='index.html'><span>Andy Brooker</span></a>
+          <a href='index.html'>
+            <div class='books-logo logo-div'>
+              <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12.3501 0.563381C11.9165 -0.187794 10.832 -0.187794 10.3984 0.563381L0.152808 18.3099C-0.281274 19.061 0.261206 20 1.12839 20H8.70701C8.31638 20 7.99998 19.6834 7.99998 19.2929V15V10.7071C7.99998 10.3166 8.31638 10 8.70701 10H13.2778C14.6587 10 15.7778 11.1193 15.7778 12.5C15.7778 13.8807 14.6587 15 13.2778 15C14.6587 15 15.7778 16.1193 15.7778 17.5C15.7778 18.8807 14.6587 20 13.2778 20H21.6201C22.4878 20 23.0298 19.061 22.5962 18.3099L12.3501 0.563381Z"
+                  fill="currentColor" />
+                <span>
+              </svg>
+              Andy Brooker</span>
+            </div>
+          </a>
         </div>
         <nav class='desktop'>
           <ul>
-            <li><a>Projects</a></li>
+            <li><a href = 'projects.html'>Projects</a></li>
             <li><a href='books.html'>Bookshelf</a></li>
           </ul>
         </nav>
@@ -148,7 +166,7 @@
         </div>
       </main>
       <footer>
-        Made and Designed by Andy Brooker 2021
+        Made by Andy. 2021.
       </footer>
     </div>
   </body>
