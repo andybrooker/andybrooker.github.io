@@ -22,6 +22,26 @@ h3 {
   font-weight: 400;
 }
 
+.projects {
+  color: #ff5c00;
+}
+
+.projects-background {
+  background: #f7f7f7;
+}
+
+.w-i-p img {
+  height: 400px;
+  width: 400px;
+  object-fit: contain;
+}
+
+.w-i-p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .logo-div {
   display: flex;
   align-items: center;
@@ -47,6 +67,8 @@ h3 {
 .logo:hover {
   opacity: 0.25;
 }
+
+
 
 footer {
   left: 0;
