@@ -14,22 +14,30 @@
     <div onclick='closeMenu()' id='close'>x</div>
     <ul>
       <li><a href='index.html'>home</a></li>
-      <li><a href='#'>projects</a></li>
-      <li><a href='about.html'>about</a></li>
+      <li><a href='projects.html'>projects</a></li>
       <li><a href='books.html'>bookshelf</a></li>
-      <li><a href='./sandbox/calculator/calculator.html'>sandbox</a></li>
+      <!-- <li><a href='./sandbox/calculator/calculator.html'>sandbox</a></li> -->
     </ul>
   </div>
   <div class='container'>
     <header>
       <div class='logo'>
         <!-- <a href='index.html'><img src='images/logo.svg'></a> -->
-        <a href = 'index.html'><span>Andrew Brooker</span></a>
+        <a href='index.html'>
+          <div class = 'logo-div'>
+            <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12.3501 0.563381C11.9165 -0.187794 10.832 -0.187794 10.3984 0.563381L0.152808 18.3099C-0.281274 19.061 0.261206 20 1.12839 20H8.70701C8.31638 20 7.99998 19.6834 7.99998 19.2929V15V10.7071C7.99998 10.3166 8.31638 10 8.70701 10H13.2778C14.6587 10 15.7778 11.1193 15.7778 12.5C15.7778 13.8807 14.6587 15 13.2778 15C14.6587 15 15.7778 16.1193 15.7778 17.5C15.7778 18.8807 14.6587 20 13.2778 20H21.6201C22.4878 20 23.0298 19.061 22.5962 18.3099L12.3501 0.563381Z"
+                fill="currentColor" />
+            <span>
+              </svg>
+              Andy Brooker</span>
+          </div>
+        </a>
       </div>
       <nav class='desktop'>
         <ul>
-          <li><a>Projects</a></li>
-          <li><a href='about.html'>About</a></li>
+          <li><a href='projects.html'>Projects</a></li>
           <li><a href='books.html'>Bookshelf</a></li>
         </ul>
       </nav>
@@ -42,29 +50,81 @@
       </nav>
     </header>
     <main>
-      
+
       <!--Wide Screen-->
-      <div class = 'wide-screen-container'>
-        <div class='about-me'><h1>Hey, I'm Andy 👋</h1> <h2>I am an incoming Digital Consultant at Newton Europe
-          and an Industrial Engineering graduate from the University of Bath. <br><br> Interested in all things design,
-          data and engineering.</h2>
+      <div class='wide-screen-container'>
+        <div class='about-me'>
+          <div class='intro'>
+            <h1>Hey, I'm Andy.</h1>
+            <div class='image-container'><img src='./images/about-me.jpeg'></div>
+          </div>
+          <h2>I'm an incoming Digital Consultant at Newton Europe
+            and an Industrial Engineering graduate from the University of Bath.
+            <br /><br />
+            Interested in the intersect between all things design,
+            data and engineering.
+            <br /><br />
+            Previously an Operations Intern at <a target='_blank' rel='no_referrer' href='https://fatllama.com'>Fat
+              Llama (YC S17)</a> and Systems Engineer at <a href='https://www.hawkeyeinnovations.com/'>Hawk-Eye
+              Innovations</a>.
+          </h2>
+          <div class='cv'>
+
+            <div class='left'>
+              <a target='_blank' rel='no_referrer' href='https://newtoneurope.com' class='company'>Newton Europe</a>
+              <span class='date'>October 2021 –</span>
+              <br />
+              <span class='job-title'>Digital Consultant</span>
+            </div>
+            <div class='right'>
+              Starting a new role in Newton Europe's Digital team, as a Digital Consultant.
+            </div>
+
+
+            <div class='left'>
+              <a target='_blank' rel='no_referrer' href='https://fatllama.com' class='company'>Fat Llama</a>
+              <span class='date'>July 2020 – September 2020</span>
+              <br />
+              <span class='job-title'>Operations Intern</span>
+            </div>
+            <div class='right'>
+              Designed automated operational processes for a startup’s new D2C marketplace, then implemented them,
+              reducing order processing time by 50% while cutting shipping costs by up to 25%.
+              <br /><br />Used SQL to analyse customer fraud rate and helped implement product features to reduce fraud
+              by 2%.
+            </div>
+
+
+            <div class='left'>
+              <a target='_blank' rel='no_referrer' href='https://hawkeyeinnovations.com' class='company'>Hawk-Eye Innovations</a>
+              <span class='date'>July 2018 – September 2019</span>
+              <br />
+              <span class='job-title'>Systems Engineer</span>
+            </div>
+            <div class='right'>
+              Selected as 2 out of 50 operators to control the line-calling technology at two high-pressure Grand Slam
+              tennis finals that were broadcast live on TV to a worldwide audience of over 20 million viewers.
+              <br /><br />
+              Project lead small teams in tennis tournaments around the world, ensuring the system ran at 99% uptime.
+              <br /><br />
+              Produced the 3D digital models of tennis stadia and objecs using 3DSMax.
+            </div>
+
+
+          </div>
         </div>
-        <div class = 'display'>
-          <div class = 'display-container thumb-one'><h3>Design</h3></div>
-          <div class = 'display-container thumb-two'><h3>Data</h3></div>
-          <div class = 'display-container thumb-three'><h3>Engineering</h3></div>
-        </div>
+
       </div>
   </div>
 
 
-    </div>
-    <div>
-      </main>
-      <footer>
-        Made and Designed by Andy Brooker 2021
-      </footer>
-    </div>
+  </div>
+  <div>
+    </main>
+    <footer>
+      Made by Andy. 2021.
+    </footer>
+  </div>
 </body>
 
 </html>
