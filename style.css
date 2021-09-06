@@ -127,10 +127,12 @@ header {
 
 #menu-button {
   cursor: pointer;
+  opacity: 0.5;
+  font-weight: 400;
 }
 
 #menu-button:hover {
-  font-weight: 500;
+  opacity: 1;
 }
 
 .display {
@@ -357,9 +359,12 @@ main {
     height: 2rem;
   }
 
+  .logo-text {
+    display: none;
+  }
+
   header {
-    padding: 1rem 0;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .mobile {
@@ -570,7 +575,7 @@ main {
 
 /* Menu */
 .menu {
-  font-family: Nunito;
+  font-family: p22-mackinac-pro;
   display: flex;
   align-items: center;
   justify-content: center;
